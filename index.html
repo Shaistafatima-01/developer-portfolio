@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer | Portfolio</title>
+
+    <style>
+        body {
+            background-color: #0b0d12;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            padding: 25px 10%;
+            border-bottom: 1px solid #333;
+            color: #a78bfa;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 120px 10%;
+        }
+
+        h1 {
+            font-size: 55px;
+        }
+
+        h1 span {
+            color: #a78bfa;
+        }
+
+        p {
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        button {
+            background: #8b5cf6;
+            color: white;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #a855f7;
+}
+h2 {
+    color: #a78bfa;
+}
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    color: #a78bfa;
+    font-size: 32px;
+}
+
+section p {
+    color: #aaa;
+}
+.skill {
+    background: #211a35;
+    color: #c4b5fd;
+    border: 1px solid #514078;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(128, 0, 255, 0.3);
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media (max-width: 700px) {
+    .projects{
+        grid-template-columns: 1fr;
+    }
+}
+.project-card {
+    background: #191d29;
+    border: 1px solid #343449;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(128, 0, 255, 0.3);
+}
+
+.project-card h3 {
+    color: #c4b5fd;
+}
+
+.project-card p {
+    color: #aaa;
+}
+
+.project-card span {
+    background: #30234b;
+    color: #c4b5fd;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+@media (max-width: 700px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    background: #191d29;
+    border: 1px solid #343449;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    color: #c4b5fd;
+}
+
+.project-card p {
+    color: #aaa;
+}
+
+.project-card span {
+    color: #c4b5fd;
+    background: #30234b;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.contact-form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    background: #191d29;
+    color: white;
+    border: 1px solid #343449;
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    background: #191d29;
+    color: white;
+    border: 1px solid #343449;
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    background: #191d29;
+    color: #aaa;
+}
+
+footer a {
+    color: #a855f7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff79c6;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+    <div class="logo">Developer.</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+    <div class="hero">
+        <h1>Hi, I'm a <span>Developer.</span></h1>
+
+        <p>
+            BCA Student | Aspiring Developer |
+            Building ideas into reality.
+        </p>
+
+        <button>Explore My Projects</button>
+    </div>
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <p class="skill">Python</p>
+    <p class="skill">HTML</p>
+    <p class="skill">CSS</p>
+    <p class="skill">JavaScript</p>
+</section>
+
+    
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Prime Number Checker</h3>
+            <p>Checks whether a number is prime using Python.</p>
+            <span>Python</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Palindrome Checker</h3>
+            <p>Checks whether a word reads the same backwards.</p>
+            <span>Python</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Number Guessing Game</h3>
+            <p>A game where users guess a secret number.</p>
+            <span>Python</span>
+        </div>
+
+    </div>
+
+
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project or opportunity? Let's connect!</p>
+
+    <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="form-status"></p>
+    </form>
+</section>
+<footer>
+    <p>© 2026 Developer- Shaista Fatima. All rights reserved.</p>
+    <p>Built with HTML, CSS & JavaScript.</p>
+    <a href="https://github.com/Shaistafatima-01" target="_blank">
+    GitHub
+</a>
+</footer>
+<script>
+const form = document.querySelector(".contact-form");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    const status = document.getElementById("form-status");
+
+    
+if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+    status.textContent = "Please fill in all fields!";
+}
+else if (!email.includes("@") || !email.includes(".")) {
+    status.textContent = "Please enter a valid email!";
+}
+else {
+    status.textContent = "Thank you! Your message is ready.";
+    form.reset();
+}
+
+});
+
+</script>
+
+
+</body>
+</html>
